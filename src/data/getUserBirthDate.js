@@ -1,3 +1,8 @@
 module.exports = function(user) {
-    // TODO: Implement me
+  if(user.birthday) {
+    return user.birthday;
+  } else {
+    return Date.parse(user.dateOfBirth);
+  }
+
 }
