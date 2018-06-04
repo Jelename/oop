@@ -1,10 +1,9 @@
-const User = require('./userClass')
+const User = require('./userClass');
 
 class UserWithBirthday extends User {
   constructor(name, birthday) {
-    super()
-    this.name = name
-    this.dateOfBirth = birthday
+    super(name);
+    this.dateOfBirth = birthday;
   }
   getBirthday() {
     return new Date(this.dateOfBirth).getTime()
